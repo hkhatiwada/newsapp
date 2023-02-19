@@ -11,7 +11,7 @@ function App() {
       <Router basename="/newsapp">
       <Navbar/>
       <Routes>
-        <Route path='/newsapp' element={<News key='general' pageSize={6} country='us' category='general' />}></Route>
+        <Route exact path='/newsapp' element={<News key='general' pageSize={6} country='us' category='general' />}></Route>
         <Route path='/science' element={<News key='a' pageSize={6} country='us' category='science' />}></Route>
         <Route path='/technology' element={<News key='b' pageSize={6} country='us' category='technology' />}></Route>
         <Route path='/general' element={<News key='c' pageSize={6} country='in' category='general' />}></Route>
